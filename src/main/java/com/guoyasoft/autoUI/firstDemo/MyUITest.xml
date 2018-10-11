@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suit1">
+	<test name="test0" preserve-order="true" enabled="true">
+		<parameter name="url" value="http://localhost:8081/#/login"></parameter>
+		<classes>
+			<class name="com.guoyasoft.autoUI.common.BaseUI">
+				<methods>
+					<include name="openUrl" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
