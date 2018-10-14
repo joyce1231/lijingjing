@@ -213,6 +213,20 @@ public class HttpClientUtil {
     }
     return result;
   }
+  public static String doGet(String url,Map<String,String> map){
+    Iterator  iterator = map.entrySet().iterator();
+    StringBuilder sb=new StringBuilder();
+    while (iterator.hasNext()) {
+      Entry elem = (Entry) iterator.next();
+      if (sb.length()>0){
+        sb.append("&");
+      }
+      sb.append(elem.getKey()+"="+elem.getValue());
+    }
+    url+="?"+sb.toString();
+    System.out.println("-------请求报文-------" + url);
+    return doGet(url);
+  }
   public static String doGet(String url) {
     return doGet(url, CHARSET);
   }
