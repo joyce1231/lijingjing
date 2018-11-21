@@ -26,13 +26,14 @@
   </properties>
 
   <dependencies>
-    <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+
+    <!-- httpclient 发送请求框架 add by 李菁菁   20181109-->
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
       <version>4.5.5</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+    <!-- fastjson javabean和json互转框架 add by 李菁菁  20181109 -->
     <dependency>
       <groupId>com.alibaba</groupId>
       <artifactId>fastjson</artifactId>
@@ -47,14 +48,14 @@
       <version>2.1.4</version>
     </dependency>
 
-    <!-- selenium界面自动化 -->
+    <!-- selenium 界面自动化框架 -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
       <version>2.50.0</version>
     </dependency>
 
-    <!--testNG测试框架 -->
+    <!--testNG 执行、管理测试框架 -->
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
